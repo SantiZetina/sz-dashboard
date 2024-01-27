@@ -91,5 +91,5 @@ body,
   white-space: nowrap; /* Keeps the text in a single line */
   border-right: 3px solid; /* Creates the cursor effect */
   width: 0; /* Start with 0 width */
-  animation: typing 5s steps(30, end) forwards; /* Adjust duration and steps as needed */
+  animation: typing 5s steps(15, end) forwards; /* Adjust duration and steps as needed */
 }
