@@ -19,10 +19,10 @@ export default function NavBar() {
         </div>
       </nav>
       {isMenuOpen && (
-        <div className="fixed inset-0 z-40 bg-white dark:bg-gray-900 p-5 pt-20 animate-slide-in">
+        <div className="fixed inset-0 z-40 bg-white dark:bg-black p-5 pt-20 animate-slide-in">
           <div className="flex flex-col items-center space-y-6">
-            <button onClick={() => setIsMenuOpen(false)} className="absolute top-5 right-5 p-2">
-              <Cross1Icon className="h-6 w-6 text-gray-600 dark:text-gray-300" />
+            <button onClick={() => setIsMenuOpen(false)} className="absolute top-5 left-5 p-2">
+              <Cross1Icon className="h-8 w-4 text-gray-600 dark:text-gray-300" />
             </button>
             <Link href="/" className="text-xl hover:text-gray-600 dark:hover:text-gray-300">Home</Link>
             <Link href="/about" className="text-xl hover:text-gray-600 dark:hover:text-gray-300">About</Link>
