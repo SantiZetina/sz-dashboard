@@ -10,11 +10,13 @@ export default function NavBar() {
 
   return (
     <>
-      <nav className="sticky top-0 z-50 flex justify-between items-center p-4 bg-white text-gray-800 dark:bg-gray-800 dark:text-gray-100 shadow-md">
-        <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-2 ">
-          <HamburgerMenuIcon className="h-6 w-6 text-gray-600 dark:text-gray-300" />
-        </button>
-        <ModeToggle />
+      <nav className="sticky top-0 z-50 flex justify-end items-center p-4 shadow-md">
+        <div className="flex items-center">
+          <ModeToggle />
+          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-2">
+            <HamburgerMenuIcon className="h-6 w-6 text-gray-800 dark:text-white" />
+          </button>
+        </div>
       </nav>
       {isMenuOpen && (
         <div className="fixed inset-0 z-40 bg-white dark:bg-gray-900 p-5 pt-20 animate-slide-in">
