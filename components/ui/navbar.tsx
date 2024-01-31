@@ -9,21 +9,21 @@ export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="flex flex-col items-center sm:flex-row sm:justify-between p-4 bg-white text-gray-800 shadow-md">
+    <nav className="flex flex-col items-center sm:flex-row sm:justify-between p-4 bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 shadow-md">
       <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="sm:hidden p-2">
-        <BorderTopIcon className="h-6 w-6 text-gray-600" />
+        <BorderTopIcon className="h-6 w-6 text-gray-600 dark:text-gray-300" />
       </button>
       <div className={`flex flex-col sm:flex-row items-center ${isMenuOpen ? 'block' : 'hidden'} sm:block`}>
-        <Link href="/" className="mx-2 py-1 hover:text-gray-600">
+        <Link href="/" className="mx-2 py-1 hover:text-gray-600 dark:hover:text-gray-300">
           Home
         </Link>
-        <Link href="/about" className="mx-2 py-1 hover:text-gray-600">
+        <Link href="/about" className="mx-2 py-1 hover:text-gray-600 dark:hover:text-gray-300">
           About
         </Link>
-        <Link href="/projects" className="mx-2 py-1 hover:text-gray-600">
+        <Link href="/projects" className="mx-2 py-1 hover:text-gray-600 dark:hover:text-gray-300">
           Projects
         </Link>
-        <Link href="/contact" className="mx-2 py-1 hover:text-gray-600">
+        <Link href="/contact" className="mx-2 py-1 hover:text-gray-600 dark:hover:text-gray-300">
           Contact
         </Link>
       </div>
@@ -31,4 +31,5 @@ export default function NavBar() {
     </nav>
   );
 }
+
 
