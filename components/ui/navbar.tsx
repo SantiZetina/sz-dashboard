@@ -24,10 +24,10 @@ export default function NavBar() {
             <button onClick={() => setIsMenuOpen(false)} className="absolute top-5 left-5 p-2">
               <Cross1Icon className="h-8 w-4 text-gray-600 dark:text-gray-300" />
             </button>
-            <Link href="/" className="text-xl hover:text-gray-600 dark:hover:text-gray-300">Home</Link>
-            <Link href="/about" className="text-xl hover:text-gray-600 dark:hover:text-gray-300">About</Link>
-            <Link href="/projects" className="text-xl hover:text-gray-600 dark:hover:text-gray-300">Projects</Link>
-            <Link href="/contact" className="text-xl hover:text-gray-600 dark:hover:text-gray-300">Contact</Link>
+            <Link href="/" className="text-white text-4xl font-bold tracking-widest uppercase">Home</Link>
+            <Link href="/about" className="text-white text-4xl font-bold tracking-widest uppercase hover:text-gray-600 dark:hover:text-gray-300">About</Link>
+            <Link href="/projects" className="text-white text-4xl font-bold tracking-widest uppercase hover:text-gray-600 dark:hover:text-gray-300">Projects</Link>
+            <Link href="/contact" className="text-white text-4xl font-bold tracking-widest uppercase hover:text-gray-600 dark:hover:text-gray-300">Contact</Link>
           </div>
         </div>
       )}
