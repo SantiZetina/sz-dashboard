@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { ModeToggle } from './toggleMode';
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,7 +10,7 @@ export default function NavBar() {
   return (
     <nav className="flex flex-col items-center sm:flex-row sm:justify-center">
       <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="sm:hidden">
-        {/* Hamburger Icon */}
+       
       </button>
       <div className={`flex flex-col sm:flex-row ${isMenuOpen ? 'block' : 'hidden'} sm:block`}>
         <Link href="/" className="text-blue-500 hover:text-blue-700">
@@ -25,6 +26,7 @@ export default function NavBar() {
             Contact
         </Link>
       </div>
+      <ModeToggle />
     </nav>
   );
 }
