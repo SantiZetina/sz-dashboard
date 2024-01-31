@@ -10,7 +10,7 @@ export default function NavBar() {
 
   return (
     <>
-      <nav className="sticky top-0 z-50 flex justify-end items-center p-4 shadow-md">
+      <nav className="fixed top-0 z-50 flex justify-end items-center p-4">
         <div className="flex items-center">
           <ModeToggle />
           <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-2">
@@ -20,7 +20,7 @@ export default function NavBar() {
       </nav>
       {isMenuOpen && (
         <div className="fixed inset-0 z-40 bg-white dark:bg-black p-5 pt-20 animate-slide-in">
-          <div className="flex flex-col items-center space-y-6">
+          <div className="flex flex-col items-end space-y-6">
             <button onClick={() => setIsMenuOpen(false)} className="absolute top-5 left-5 p-2">
               <Cross1Icon className="h-8 w-4 text-gray-600 dark:text-gray-300" />
             </button>
