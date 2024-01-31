@@ -10,7 +10,7 @@ export default function NavBar() {
 
   return (
     <>
-      <nav className="fixed top-0 z-50 flex justify-end items-center p-4">
+      <nav className="fixed top-0 z-50 w-full flex justify-end items-center p-4">
         <div className="flex items-center">
           <ModeToggle />
           <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-2">
