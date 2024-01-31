@@ -9,22 +9,22 @@ export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="flex flex-col items-center sm:flex-row sm:justify-center">
-      <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="sm:hidden">
-       <BorderTopIcon />
+    <nav className="flex flex-col items-center sm:flex-row sm:justify-between p-4 bg-white text-gray-800 shadow-md">
+      <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="sm:hidden p-2">
+        <BorderTopIcon className="h-6 w-6 text-gray-600" />
       </button>
-      <div className={`flex flex-col sm:flex-row ${isMenuOpen ? 'block' : 'hidden'} sm:block`}>
-        <Link href="/" className="text-blue-500 hover:text-blue-700">
-            Home
+      <div className={`flex flex-col sm:flex-row items-center ${isMenuOpen ? 'block' : 'hidden'} sm:block`}>
+        <Link href="/" className="mx-2 py-1 hover:text-gray-600">
+          Home
         </Link>
-        <Link href="/about" className="text-blue-500 hover:text-blue-700">
-            About
+        <Link href="/about" className="mx-2 py-1 hover:text-gray-600">
+          About
         </Link>
-        <Link href="/projects" className="text-blue-500 hover:text-blue-700">
-            Projects
+        <Link href="/projects" className="mx-2 py-1 hover:text-gray-600">
+          Projects
         </Link>
-        <Link href="/contact" className="text-blue-500 hover:text-blue-700">
-            Contact
+        <Link href="/contact" className="mx-2 py-1 hover:text-gray-600">
+          Contact
         </Link>
       </div>
       <ModeToggle />
