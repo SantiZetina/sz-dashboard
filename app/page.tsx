@@ -1,4 +1,3 @@
-import RootLayout from "./layout";
 export default function Page() {
   const typingEffectStyle = {
     animation: `typing 5s linear forwards, blink 0.75s step-end infinite`,
