@@ -24,8 +24,8 @@ export default function NavBar() {
         </div>
       </nav>
       {isMenuOpen && (
-  <div className="fixed inset-0 z-40 bg-white bg-opacity-85 dark:bg-black dark:bg-opacity-85 p-5 pt-20 animate-slide-in">
-  <div className="flex flex-col items-end space-y-6">
+       <div className="fixed inset-0 z-40 bg-white bg-opacity-95 dark:bg-black dark:bg-opacity-95 p-5 pt-20 animate-slide-in">
+          <div className="flex flex-col items-end space-y-6">
             <button onClick={() => setIsMenuOpen(false)} className="absolute top-5 left-5 p-2">
               <Cross1Icon className="h-8 w-4 text-gray-600 dark:text-gray-300" />
             </button>
