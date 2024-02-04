@@ -1,12 +1,17 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { ModeToggle } from './toggleMode';
 import { HamburgerMenuIcon, Cross1Icon } from '@radix-ui/react-icons';
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    console.log('NavBar component mounted');
+    return () => console.log('NavBar component unmounted');
+  }, []);
 
   return (
     <>

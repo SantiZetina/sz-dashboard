@@ -2,7 +2,7 @@ import RootLayout from "../layout";
 
 export default function AboutPage() {
     return (
-        <RootLayout>
+     
             <div className="flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 pb-24 text-center gap-y-8">
                 <h1 className="text-3xl sm:text-6xl md:text-8xl lg:text-8xl font-bold">
                     About Me
@@ -23,6 +23,6 @@ export default function AboutPage() {
                     {/* More content as needed */}
                 </div>
             </div>
-        </RootLayout>
+        
     );
 }

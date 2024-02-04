@@ -2,7 +2,7 @@ import RootLayout from "../layout";
 
 export default function ContactPage() {
     return (
-        <RootLayout>
+        
             <div className="flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 pb-24 text-center gap-y-8 bg-background text-foreground">
                 <h1 className="text-3xl sm:text-6xl md:text-8xl lg:text-8xl font-bold">
                     Contact Me
@@ -14,7 +14,7 @@ export default function ContactPage() {
                     {/* Contact form or contact information here */}
                 </div>
             </div>
-        </RootLayout>
+     
     );
 }
 

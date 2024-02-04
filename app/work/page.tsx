@@ -2,7 +2,7 @@ import RootLayout from "../layout";
 
 export default function WorkPage() {
     return (
-        <RootLayout>
+  
             <div className="container mx-auto px-4">
                 <h1 className="text-3xl font-bold text-center my-8">
                     My Work
@@ -18,7 +18,7 @@ export default function WorkPage() {
                     ))}
                 </div>
             </div>
-        </RootLayout>
+      
     );
 }
 

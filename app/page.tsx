@@ -1,4 +1,4 @@
-
+import RootLayout from "./layout";
 export default function Page() {
   const typingEffectStyle = {
     animation: `typing 5s linear forwards, blink 0.75s step-end infinite`,
@@ -7,6 +7,7 @@ export default function Page() {
   };
 
   return (
+    
     <main className='flex min-h-screen flex-col p-4 sm:p-6'>
       <div className='flex flex-col items-center justify-center text-center gap-y-8 flex-1 px-4 sm:px-6 pb-24'> 
         <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-bold">
