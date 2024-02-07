@@ -9,7 +9,7 @@ export default function AboutPage() {
             </div>
 
             {/* Introduction Area */}
-            <div className="mt-8 bg-gray-100 dark:bg-black p-4 rounded">
+            <div className="mt-8 bg-gray-100 dark:bg-black  p-4 rounded">
                 <p className="text-md text-gray-800 dark:text-gray-200">
                     Hi, Im Santiago. Born in Mexico City, I moved to the States in 2012 and embarked on a journey in web development. Im a proud graduate of the Georgia Tech MERN Boot Camp.
                 </p>
