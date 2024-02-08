@@ -1,6 +1,6 @@
 export default function AboutPage() {
     return (
-        <div className="container mx-auto p-4">
+        <div className="container mx-auto pt-24">
             {/* Header Section */}
             <div className="text-center">
                 <h1 className="text-3xl sm:text-6xl font-bold text-primary dark:text-primary-foreground">
@@ -14,7 +14,7 @@ export default function AboutPage() {
             {/* Introduction Area */}
             <div className="mt-8 bg-card dark:bg-dark-card p-6 rounded-xl shadow-lg">
                 <p className="text-md text-foreground dark:text-dark-foreground">
-                    Hi, I'm Santiago. Born in Mexico City, I moved to the States in 2012 and embarked on a journey in web development. I'm a proud graduate of the Georgia Tech MERN Boot Camp.
+                    Hi, Im Santiago. Born in Mexico City, I moved to the States in 2012 and embarked on a journey in web development. Im a proud graduate of the Georgia Tech MERN Boot Camp.
                 </p>
             </div>
 
